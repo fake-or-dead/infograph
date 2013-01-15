@@ -1,5 +1,12 @@
 @import "compass/css3";
 
+span.percent {
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+}
 
 #webglarea {
   width: 300px;
@@ -7,7 +14,6 @@
 }
 
 /* Start: Recommended Isotope styles */
-
 /**** Isotope Filtering ****/
 
 .isotope-item {

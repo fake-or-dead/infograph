@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="//code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  
   <!--[if IE]>
       <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
@@ -67,10 +69,9 @@
   <script src="js/jquery.infinitescroll.min.js"></script>
   <script src="js/fake-users.js"></script>
   <script src="js/infograph.js"></script>
+  <script src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
   <script>
-    $(document).ready(function() {
-      $('#users').infograph({'clickFn': function(){ console.log(this.id) }});
-      
+    $(document).ready(function() {     
       for(var i=0; i<18; i++) {
           $('#container').append(fakeUser.getGroup());
       }
@@ -83,6 +84,16 @@
       $('#container').on('click', '.element', function() {
         $(this).toggleClass('large');
         $('#container').isotope('reLayout');
+      });
+
+      $('#container').infograph({
+          'itemSelector': '.element', 
+          'keySelector': '.level',
+          'clickFn': function(){ console.log(this.id); }
+      });
+      
+      $( document ).tooltip({
+        track: true
       });
     })
   </script>

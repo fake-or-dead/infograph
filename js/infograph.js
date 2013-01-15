@@ -82,9 +82,14 @@ var _createChart = function(opts, obj, target) {
 
     // Draw
     $.each(drawable, function(k, v) {
+<<<<<<< HEAD
         if(typeof opts.clickFn === 'function') {
             $.extend(v, { 'clickFn': opts.clickFn });
         }
+=======
+        $.extend(v, { 'clickFn': opts.clickFn });
+        // console.log(v);
+>>>>>>> add jquery tooltips
         _createSquare(v, target);
     });      
 
@@ -125,6 +130,10 @@ var _formulate = function(type, obj) {
         }
         result.push({
             'id': v[0],
+<<<<<<< HEAD
+=======
+            'percent': v[1],
+>>>>>>> add jquery tooltips
             'width': width,
             'height': height,
             'background-color': $.fn.infograph.color[(i++) % $.fn.infograph.color.length],
@@ -160,9 +169,16 @@ var _checkEqual = function(obj) {
 };
 
 var _createSquare = function(square, target) {
+<<<<<<< HEAD
     $('<div id="' + square.id + '">')
         .css(square)
         .on('click', square.clickFn )
+=======
+    $('<div id="' + square.id + '"><span class="percent">'+ square.percent +'%</span></div>')
+        .css(square)
+        .on('click', square.clickFn )
+        .attr('title', 'Value ' + square.id + ' is ' + square.percent + '% of 100%')
+>>>>>>> add jquery tooltips
         .appendTo(target);
 };
 

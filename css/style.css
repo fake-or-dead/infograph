@@ -1,18 +1,33 @@
+/* line 3, sass/style.scss */
+span.percent {
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+}
+
+/* line 11, sass/style.scss */
+#webglarea {
+  width: 300px;
+  height: 300px;
+}
+
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
-/* line 7, sass/style.scss */
+/* line 19, sass/style.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 11, sass/style.scss */
+/* line 23, sass/style.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 18, sass/style.scss */
+/* line 30, sass/style.scss */
 .isotope {
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
@@ -27,7 +42,7 @@
   /**** disabling Isotope CSS3 transitions ****/
   /* disable CSS transitions for containers with infinite scrolling*/
 }
-/* line 21, sass/style.scss */
+/* line 33, sass/style.scss */
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
@@ -40,7 +55,7 @@
   -o-transition-property: -o-transform, opacity;
   transition-property: transform opacity;
 }
-/* line 25, sass/style.scss */
+/* line 37, sass/style.scss */
 .isotope.no-transition {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -48,7 +63,7 @@
   -o-transition-duration: 0s;
   transition-duration: 0s;
 }
-/* line 27, sass/style.scss */
+/* line 39, sass/style.scss */
 .isotope.no-transition .isotope-item {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -56,7 +71,7 @@
   -o-transition-duration: 0s;
   transition-duration: 0s;
 }
-/* line 31, sass/style.scss */
+/* line 43, sass/style.scss */
 .isotope .isotope-item.no-transition {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -64,7 +79,7 @@
   -o-transition-duration: 0s;
   transition-duration: 0s;
 }
-/* line 35, sass/style.scss */
+/* line 47, sass/style.scss */
 .isotope.infinite-scrolling {
   -webkit-transition: none;
   -moz-transition: none;
@@ -76,14 +91,14 @@
 /* End: Recommended Isotope styles */
 /**** Isotope styles ****/
 /* required for containers to inherit vertical size from window */
-/* line 46, sass/style.scss */
+/* line 58, sass/style.scss */
 #container {
   border: 1px solid #666;
   padding: 5px;
   margin-bottom: 20px;
 }
 
-/* line 52, sass/style.scss */
+/* line 64, sass/style.scss */
 .element {
   width: 110px;
   height: 110px;
@@ -94,62 +109,62 @@
   background: #888;
   color: #000;
 }
-/* line 61, sass/style.scss */
+/* line 73, sass/style.scss */
 .element.alkali {
   background: #F00;
   background: red;
 }
-/* line 65, sass/style.scss */
+/* line 77, sass/style.scss */
 .element.alkaline-earth {
   background: #F80;
   background: #ff9900;
 }
-/* line 69, sass/style.scss */
+/* line 81, sass/style.scss */
 .element.lanthanoid {
   background: #FF0;
   background: #ccff00;
 }
-/* line 73, sass/style.scss */
+/* line 85, sass/style.scss */
 .element.actinoid {
   background: #0F0;
   background: #33ff00;
 }
-/* line 77, sass/style.scss */
+/* line 89, sass/style.scss */
 .element.transition {
   background: #0F8;
   background: #00ff66;
 }
-/* line 81, sass/style.scss */
+/* line 93, sass/style.scss */
 .element.post-transition {
   background: #0FF;
   background: cyan;
 }
-/* line 85, sass/style.scss */
+/* line 97, sass/style.scss */
 .element.metalloid {
   background: #08F;
   background: #0066ff;
 }
-/* line 89, sass/style.scss */
+/* line 101, sass/style.scss */
 .element.other.nonmetal {
   background: #00F;
   background: #3300ff;
 }
-/* line 93, sass/style.scss */
+/* line 105, sass/style.scss */
 .element.halogen {
   background: #F0F;
   background: #cc00ff;
 }
-/* line 97, sass/style.scss */
+/* line 109, sass/style.scss */
 .element.noble-gas {
   background: #F08;
   background: #ff0099;
 }
-/* line 101, sass/style.scss */
+/* line 113, sass/style.scss */
 .element * {
   position: absolute;
   margin: 0;
 }
-/* line 105, sass/style.scss */
+/* line 117, sass/style.scss */
 .element .symbol {
   left: 0.2em;
   top: 0.4em;
@@ -157,21 +172,21 @@
   line-height: 1.0em;
   color: #FFF;
 }
-/* line 112, sass/style.scss */
+/* line 124, sass/style.scss */
 .element.large .symbol {
   font-size: 4.5em;
 }
-/* line 115, sass/style.scss */
+/* line 127, sass/style.scss */
 .element.fake .symbol {
   color: #000;
 }
-/* line 118, sass/style.scss */
+/* line 130, sass/style.scss */
 .element .user {
   width: 100px;
   height: 100px;
   padding: 5px 5px;
 }
-/* line 123, sass/style.scss */
+/* line 135, sass/style.scss */
 .element .name {
   left: 0.5em;
   bottom: 1.6em;
@@ -181,13 +196,13 @@
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
-/* line 132, sass/style.scss */
+/* line 144, sass/style.scss */
 .element .subtle {
   bottom: 0;
   height: 40px;
   width: 100%;
 }
-/* line 137, sass/style.scss */
+/* line 149, sass/style.scss */
 .element .weight, .element .point {
   font-size: 0.8em;
   left: 0.5em;
@@ -197,7 +212,7 @@
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
-/* line 146, sass/style.scss */
+/* line 158, sass/style.scss */
 .element .number, .element .level {
   font-size: 1.25em;
   font-weight: bold;
@@ -209,41 +224,41 @@
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
-/* line 157, sass/style.scss */
+/* line 169, sass/style.scss */
 .element.noob {
   background-color: #f00;
 }
-/* line 160, sass/style.scss */
+/* line 172, sass/style.scss */
 .element.amature {
   background-color: #0f0;
 }
-/* line 163, sass/style.scss */
+/* line 175, sass/style.scss */
 .element.experience {
   background-color: #00f;
 }
-/* line 166, sass/style.scss */
+/* line 178, sass/style.scss */
 .element.god {
   background-color: gold;
 }
-/* line 169, sass/style.scss */
+/* line 181, sass/style.scss */
 .element.motherofgod {
   background-color: #fff;
 }
 
-/* line 175, sass/style.scss */
+/* line 187, sass/style.scss */
 .variable-sizes .element.width2 {
   width: 230px;
 }
-/* line 178, sass/style.scss */
+/* line 190, sass/style.scss */
 .variable-sizes .element.height2 {
   height: 230px;
 }
-/* line 181, sass/style.scss */
+/* line 193, sass/style.scss */
 .variable-sizes .element.width2.height2 {
   font-size: 2.0em;
 }
 
-/* line 186, sass/style.scss */
+/* line 198, sass/style.scss */
 .element.large {
   font-size: 3.0em;
   width: 350px;
@@ -251,14 +266,14 @@
   z-index: 100;
 }
 
-/* line 193, sass/style.scss */
+/* line 205, sass/style.scss */
 .variable-sizes .element.large {
   font-size: 3.0em;
   width: 350px;
   height: 350px;
   z-index: 100;
 }
-/* line 198, sass/style.scss */
+/* line 210, sass/style.scss */
 .variable-sizes .element.large.width2.height2 {
   font-size: 3.0em;
   width: 350px;
@@ -266,15 +281,21 @@
   z-index: 100;
 }
 
-/* line 206, sass/style.scss */
+/* line 218, sass/style.scss */
 .clickable .element:hover {
   cursor: pointer;
 }
-/* line 208, sass/style.scss */
+/* line 220, sass/style.scss */
 .clickable .element:hover h3 {
   text-shadow: 0 0 10px white, 0 0 10px white;
 }
-/* line 211, sass/style.scss */
+/* line 223, sass/style.scss */
 .clickable .element:hover h2 {
   color: white;
+}
+
+/* line 228, sass/style.scss */
+#drawArea {
+  width: 300px;
+  height: 300px;
 }
