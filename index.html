@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+</head>
+<body>
+  <div id="users" style="width:400px; height:400px">
+    <div class="user">
+      <div class="name">1</div>
+    </div>
+    <div class="user">
+      <div class="name">2</div>
+    </div>
+    <div class="user">
+      <div class="name">3</div>
+    </div>
+    <div class="user">
+      <div class="name">4</div>
+    </div>
+    <div class="user">
+      <div class="name">5</div>
+    </div>
+    <div class="user">
+      <div class="name">6</div>
+    </div>
+    <div class="user">
+      <div class="name">8</div>
+    </div>
+    <div class="user">
+      <div class="name">8</div>
+    </div>
+    <div class="user">
+      <div class="name">8</div>
+    </div>
+  </div>
+
+  <section id="options" class="clearfix">
+      <div class="option-combo">
+        <h2>Sort:</h2>
+        <ul id="sort" class="option-set clearfix" data-option-key="sortBy">
+          <li><a href="#level" data-option-value="level" class="selected">level</a></li>
+          <li><a href="#point" data-option-value="point">point</a></li>
+          <li><a href="#name" data-option-value="name">name</a></li>
+        </ul>
+      </div>
+  </section>
+
+  <div id="container" class="super-list variable-sizes clearfix clickable isotope">
+      <div class="element">
+          <img class="user" src="//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c12.12.156.156/s100x100/529462_10151030915344835_1070028058_a.jpg"></img>
+          <p class="level">11</p>
+          <h2 class="name">Piya Pakdeechaturun</h2>
+          <p class="point">365</p>
+      </div>
+  </div>
+
+  <div id="page_nav">
+      <a href="pages/2.html"></a>
+  </div>
+
+  <!-- javascript library -->
+  <script src="js/jquery-1.7.1.min.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/jquery.infinitescroll.min.js"></script>
+  <script src="js/fake-users.js"></script>
+  <script src="js/infograph.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#users').infograph({'clickFn': function(){ console.log(this.id) }});
+      
+      for(var i=0; i<18; i++) {
+          $('#container').append(fakeUser.getGroup());
+      }
+
+      $('#container').isotope({
+        itemSelector : '.element' 
+      });
+
+      // Click to expand
+      $('#container').on('click', '.element', function() {
+        $(this).toggleClass('large');
+        $('#container').isotope('reLayout');
+      });
+    })
+  </script>
+</body>
+</html>
