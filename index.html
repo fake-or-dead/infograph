@@ -22,21 +22,7 @@
     <div class="user">
       <div class="name">4</div>
     </div>
-    <div class="user">
-      <div class="name">5</div>
-    </div>
-    <div class="user">
-      <div class="name">6</div>
-    </div>
-    <div class="user">
-      <div class="name">8</div>
-    </div>
-    <div class="user">
-      <div class="name">8</div>
-    </div>
-    <div class="user">
-      <div class="name">8</div>
-    </div>
+
   </div>
 
   <section id="options" class="clearfix">
@@ -86,15 +72,16 @@
         $('#container').isotope('reLayout');
       });
 
-      $('#container').infograph({
-          'itemSelector': '.element', 
-          'keySelector': '.level',
+      $('#users').infograph({
+          'itemSelector': '.user', 
+          'keySelector': '.name',
           'clickFn': function(){ console.log(this.id); }
       });
-      
+
       $( document ).tooltip({
         track: true
       });
+
     })
   </script>
 </body>

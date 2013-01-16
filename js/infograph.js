@@ -9,10 +9,6 @@ $.fn.infograph = function(option) {
         var $this = $(this),
             options = option || {},
             square = ($this.width() >= $this.height()) ? $this.width() : $this.height();
-
-            console.log(this);
-            
-            console.log($this);
             console.log('$this.height() : ' + $this.height() + ' $this.width() : ' + $this.width());
 
         // set options to defaults

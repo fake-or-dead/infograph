@@ -1,0 +1,54 @@
+{
+	id: 1,
+	name: "piya pakdeechaturun",
+	first_name: "piya",
+	last_name: "pakdeechaturun",
+	username: "fake-or-dead",
+	location: {
+			id: 12345,
+			
+		},
+	gender: "male",
+	timezone: 7,
+	verified: true,
+	updated_time: "xxx"
+	gamification: {
+		points: [
+			{
+				id: 1,
+				name: "site rewards point",
+				value: 1000
+			}
+			,
+			{
+				id: 2,
+				name: "site happy point",
+				value: 500
+			}
+		],
+		exp: 1591237,
+		level: 13,
+		badge: [
+			{
+				id: 1,
+				name: "site founder badge",
+				link: "\/\/pbapp.net/asdklfjkle/as;dkfjj.png"
+			},
+			{
+				id: 2,
+				name: "site vice president badge",
+				link: "\/\/pbapp.net/asdklfjkle/as;dkfjj.png"
+			}
+			{
+				id: 3,
+				name: "site The third badge",
+				link: "\/\/pbapp.net/asdklfjkle/as;dkfjj.png"
+			},
+			{
+				id: 4,
+				name: "site four fighter" badge",
+				link: "\/\/pbapp.net/asdklfjkle/as;dkfjj.png"
+			}			
+		]
+	}
+}
